@@ -15,6 +15,6 @@ public class DateActivity extends AppCompatActivity {
 
         TextView textView = findViewById(R.id.tv_date);
         Intent intent = getIntent();
-        textView.setText(((Intent) intent).getStringExtra("Today's Date is " + "date"));
+        textView.setText("Today's Date is " + intent.getStringExtra("date"));
     }
 }
